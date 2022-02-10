@@ -40,22 +40,20 @@
   align-items: center;
   border-radius: 50%;
   margin-left: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
 
 .work-profession-social-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work-profession-social-link:hover,
-.work-profession-social-link:focus {
-  background-color: #2196f3;
-}
-
-.work-profession-social-link:hover .work-profession-social-icon,
-.work-profession-social-link:focus .work-profession-social-icon {
-  fill: #ffffff;
+  .work-profession-social-link:hover &,
+  .work-profession-social-link:focus & {
+    fill: #ffffff;
+  }
 }
 
 .work-title {
