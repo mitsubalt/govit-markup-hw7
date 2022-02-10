@@ -39,10 +39,9 @@
   position: absolute;
   color: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon:hover {
-  fill: var(--accent-color);
+  &:hover {
+    fill: var(--accent-color);
+  }
 }
 
 .is-hidden {
@@ -85,14 +84,12 @@
   padding-left: 42px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus {
-  border-color: var(--accent-color);
-}
-
-.form-input:focus + .input-icon {
-  fill: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+    & + .input-icon {
+      fill: var(--accent-color);
+    }
+  }
 }
 
 .input-text {
@@ -114,22 +111,17 @@
   resize: none;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-text:focus {
-  border-color: var(--accent-color);
-}
-
-.form-text::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-text {
   padding: 12px 16px 12px 16px;
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-field-policy {
@@ -147,15 +139,14 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.check-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 0.2px solid #000000;
-  border-radius: 2px;
-  margin-right: 7px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 0.2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+  }
 }
 
 .policy-link {
@@ -172,26 +163,4 @@
 
 .policy-check {
   visibility: hidden;
-}
-
-.policy-btn {
-  font-family: inherit;
-  min-width: 200px;
-  height: 50px;
-  background-color: #2196f3;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  /* identical to box height, or 187% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--btn-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 55px;
-  padding-left: 55px;
-  margin-left: auto;
-  margin-right: auto;
 }
