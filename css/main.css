@@ -50,6 +50,16 @@ body {
   outline: 2px solid red;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-portfolio-container {
+  display: flex;
+  align-items: center;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -359,11 +369,6 @@ img {
   display: inline-block;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
 .header-list,
 .contakts-list {
   display: flex;
@@ -378,33 +383,6 @@ img {
   margin-left: auto;
 }
 
-.header-portfolio {
-  border-bottom: 1px solid #ececec;
-}
-
-.header-portfolio-logo {
-  margin-right: 93px;
-}
-
-.header-portfolio-container {
-  display: flex;
-  align-items: center;
-}
-
-.header-portfolio-list,
-.portfolio-contakts-list {
-  display: flex;
-  justify-content: center;
-}
-
-.header-portfolio-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.portfolio-contakts-list {
-  margin-left: auto;
-}
-
 .link-logo {
   font-weight: bold;
   font-size: 26px;
@@ -413,18 +391,6 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
   font-family: Raleway, cursive;
-}
-
-.portfolio-link-logo {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  font-family: Raleway, cursive;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-logo {
@@ -448,15 +414,6 @@ img {
   padding-bottom: 25px;
 }
 
-.header-portfolio-logo {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -466,8 +423,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -495,33 +451,6 @@ img {
   bottom: -32px;
 }
 
-.header-portfolio-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--first-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-portfolio-link:hover,
-.header-portfolio-link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
-.header-portfolio-link-current {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  position: relative;
-}
-
 .tel-svg {
   margin-right: 10px;
   align-items: center;
@@ -544,51 +473,9 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
+.header-mail:hover, .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.header-portfolio-mail,
-.header-portfolio-tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-portfolio-mail:hover,
-.header-portfolio-mail:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.header-portfolio-tel:hover,
-.header-portfolio-tel:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -943,17 +830,16 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--accent-color);
+}
+
 .clients-icon {
   fill: #afb1b8;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-link:hover .clients-icon,
@@ -1285,5 +1171,108 @@ img {
 
 .connect-input:focus {
   border-color: var(--accent-color);
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-portfolio-logo {
+  margin-right: 93px;
+}
+
+.header-portfolio-list,
+.portfolio-contakts-list {
+  display: flex;
+  justify-content: center;
+}
+
+.header-portfolio-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.portfolio-contakts-list {
+  margin-left: auto;
+}
+
+.portfolio-link-logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  font-family: Raleway, cursive;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-portfolio-logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.header-portfolio-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--first-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-portfolio-link:hover,
+.header-portfolio-link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.header-portfolio-link-current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  position: relative;
+}
+
+.header-portfolio-mail,
+.header-portfolio-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-portfolio-mail:hover,
+.header-portfolio-mail:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.header-portfolio-tel:hover,
+.header-portfolio-tel:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
