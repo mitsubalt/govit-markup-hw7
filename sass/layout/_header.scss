@@ -3,6 +3,11 @@
   display: inline-block;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
 .header-list,
 .contakts-list {
   display: flex;
