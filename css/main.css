@@ -50,21 +50,6 @@ body {
   outline: 2px solid red;
 }
 
-.header-portfolio-container {
-  display: flex;
-  align-items: center;
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-portfolio-container {
-  display: flex;
-  align-items: baseline;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -779,6 +764,11 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-link-logo {
   font-weight: bold;
   font-size: 26px;
@@ -1129,6 +1119,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #212121;
+}
+
+.footer-portfolio-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-portfolio-link-logo {
