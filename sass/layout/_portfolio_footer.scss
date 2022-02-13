@@ -8,11 +8,6 @@
   background-color: #212121;
 }
 
-.footer-portfolio-container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-portfolio-link-logo {
   font-weight: bold;
   font-size: 26px;
@@ -75,6 +70,11 @@
   &:focus {
     color: var(--link-color);
   }
+}
+
+.footer-portfolio-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .portfolio-social-link-box {

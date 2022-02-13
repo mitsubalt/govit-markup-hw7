@@ -359,7 +359,7 @@ img {
   display: inline-block;
 }
 
-.header__container {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -944,6 +944,11 @@ img {
   margin-right: 93px;
 }
 
+.header-portfolio-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-portfolio-list,
 .portfolio-contakts-list {
   display: flex;
@@ -1121,11 +1126,6 @@ img {
   background-color: #212121;
 }
 
-.footer-portfolio-container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-portfolio-link-logo {
   font-weight: bold;
   font-size: 26px;
@@ -1189,6 +1189,11 @@ img {
 
 .footer-portfolio-tel:hover, .footer-portfolio-tel:focus {
   color: var(--link-color);
+}
+
+.footer-portfolio-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .portfolio-social-link-box {
